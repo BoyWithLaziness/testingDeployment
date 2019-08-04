@@ -8,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { }
-
+  value = false;
   ngOnInit() {
   }
 
+  onClick() {
+    this.value = !this.value;
+  }
 }
